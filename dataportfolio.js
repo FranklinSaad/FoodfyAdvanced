@@ -6,7 +6,7 @@ module.exports = [
     },
     {
         id: "/pizza.png",
-        title: "izza 4 estações",
+        title: "Pizza 4 estações",
         chef: "por Fabiana Melo"
     },
     {
@@ -36,7 +36,7 @@ module.exports = [
     },
     {
         id: "/pizza.png",
-        title: "izza 4 estações",
+        title: "Pizza 4 estações",
         chef: "por Fabiana Melo"
     },
     {
