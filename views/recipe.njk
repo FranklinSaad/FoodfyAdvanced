@@ -13,27 +13,29 @@
             <p class="food-name">{{item.title}}</p>
             <p class="food-author">{{item.author}}</p>
         </div>
+
+        <p class="title">Ingredientes</p>
+        <div class="list">
+            <p>
+                {%for ingredient in item.ingredients%}
+                    <li>{{ingredient}}</li>
+                {% endfor %}
+            </p>
+        </div>
+
+        <p class="title">Modo de preparo</p>
+        <div class="list">
+            <p>
+                {%for preparation in item.preparations%}
+                    <li>{{preparation}}</li>
+                {% endfor %}
+            </p>
+        </div>
+        
+        <p class="title">Informações adicionais</p>
+        <p class="information">{{item.information}}</p>
     </div>
 
-    <p class="title">Ingredientes</p>
-    <div class="list">
-        <p>
-            {%for ingredient in item.ingredients%}
-                <li>{{ingredient}}</li>
-            {% endfor %}
-        </p>
-    </div>
-
-    <p class="title">Modo de preparo</p>
-    <div class="list">
-        <p>
-            {%for preparation in item.preparations%}
-                <li>{{preparation}}</li>
-            {% endfor %}
-        </p>
-    </div>
-
-    <p class="title">Informações adicionais</p>
-    <p class="information">{{item.information}}</p>
+    <script src="script.js"></script>
 
 {% endblock %}

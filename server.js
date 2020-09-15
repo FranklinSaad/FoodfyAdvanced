@@ -2,7 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const foods = require("./dataportfolio")
+const foods = require("./datarecipe")
 const recipes = require("./datarecipe")
 
 server.use(express.static('public'))

@@ -4,13 +4,14 @@
 
 .foods {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px; 
 }
 
 .food {
     cursor: pointer;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .food img{
@@ -30,6 +31,5 @@
 .food-author {
     font-size: 14px;
     opacity: 0.5;
-    margin-bottom: 30px;
 }
 

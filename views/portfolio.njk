@@ -10,13 +10,13 @@
     <div class="foods">
 
         {% for item in items %}
-            <div class="food" id="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas{{item.id}}">
+            <div class="food" id="{{item.id}}">
 
                 <img src="{{item.id}}" alt="{{item.title}}">
 
                 <p class="food-name">{{item.title}}</p>
 
-                <p class="food-author">{{item.chef}}</p>
+                <p class="food-author">{{item.author}}</p>
 
             </div>
         {% endfor %}
