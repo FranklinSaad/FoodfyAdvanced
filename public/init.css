@@ -33,12 +33,18 @@
     margin-bottom: 15px;   
 }
 
-.foods {
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
 }
 
-.card-img img{
+.card {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.card img{
     border-radius: 15px;
     border-radius: 15px;
     width: 300px;

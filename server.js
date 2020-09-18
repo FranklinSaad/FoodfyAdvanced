@@ -4,6 +4,8 @@ const nunjucks = require('nunjucks')
 const server = express()
 const foods = require("./datarecipe")
 const recipes = require("./datarecipe")
+const cards = require("./datainit")
+
 
 server.use(express.static('public'))
 
@@ -16,7 +18,7 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-    return res.render("init")
+    return res.render("init", { items: cards })
 })
 
 server.get("/portfolio", function(req, res) {

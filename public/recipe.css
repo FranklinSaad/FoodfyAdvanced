@@ -2,19 +2,13 @@
     font-weight: bold;
 }
 
-.foods {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;  
-}
-
 .food {
     cursor: pointer;
     margin: 0 auto;
+    text-align: center;
 }
 
 .food img{
-    border-radius: 15px;
     border-radius: 15px;
     width: 940px;
     height: 280px;
