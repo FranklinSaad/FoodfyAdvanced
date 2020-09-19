@@ -14,26 +14,46 @@
             <p class="food-author">{{item.author}}</p>
         </div>
 
-        <p class="title">Ingredientes</p>
-        <div class="list">
-            <p>
-                {%for ingredient in item.ingredients%}
-                    <li>{{ingredient}}</li>
-                {% endfor %}
-            </p>
+        <div class="textbox">
+            <p class="title">Ingredientes</p>
+            <input type="button" id="bma" value="Mostrar" onclick="mostra('ma')">
         </div>
 
-        <p class="title">Modo de preparo</p>
-        <div class="list">
-            <p>
-                {%for preparation in item.preparations%}
-                    <li>{{preparation}}</li>
-                {% endfor %}
-            </p>
+        <div id="ma" class="hidden">
+            <div class="list">
+                <p>
+                    {%for ingredient in item.ingredients%}
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
+                </p>
+            </div>
         </div>
-        
-        <p class="title">Informações adicionais</p>
-        <p class="information">{{item.information}}</p>
+
+        <div class="textbox">
+            <p class="title">Modo de preparo</p>
+            <input type="button" id="bmb" value="Mostrar" onclick="mostra('mb')">
+        </div>
+
+        <div id="mb" class="hidden">
+            <div class="list">
+                <p>
+                    {%for preparation in item.preparations%}
+                        <li>{{preparation}}</li>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="textbox">
+            <p class="title">Informações adicionais</p>
+            <input type="button" id="bmc" value="Mostrar" onclick="mostra('mc')">
+        </div>
+
+        <div id="mc" class="hidden">
+            <p class="information">{{item.information}}</p>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 
 {% endblock %}
